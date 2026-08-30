@@ -235,7 +235,31 @@ const handlePrintPDF = () => {
             </div>
           </div>
 
-          {/* 5. Esferas Mágicas Dominadas */}
+          {/* 5. Habilidades */}
+          <div>
+            <h3 className="text-xs font-bold text-red-500 uppercase tracking-wider mb-2 border-b border-zinc-800 pb-1">
+              Habilidades
+            </h3>
+            <div className="grid grid-cols-3 gap-4 text-xs">
+              {Object.keys(ABILITY_CATEGORIES).map((catKey) => {
+                const known = ABILITY_CATEGORIES[catKey].traits.filter((t) => (character.abilities[t.id] || 0) > 0);
+                return (
+                  <div key={catKey}>
+                    <strong className="text-zinc-400 block mb-1">{ABILITY_CATEGORIES[catKey].label}:</strong>
+                    {known.length > 0 ? (
+                      known.map((t) => (
+                        <p key={t.id}>{t.name}: {character.abilities[t.id]}</p>
+                      ))
+                    ) : (
+                      <p className="text-zinc-600 italic">Ninguna</p>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* 6. Esferas Mágicas Dominadas */}
           <div>
             <h3 className="text-xs font-bold text-red-500 uppercase tracking-wider mb-2 border-b border-zinc-800 pb-1">
               Esferas Mágicas Dominadas
@@ -257,7 +281,7 @@ const handlePrintPDF = () => {
             </div>
           </div>
 
-          {/* 6. Trasfondos Adquiridos */}
+          {/* 7. Trasfondos Adquiridos */}
           {Object.values(character.backgrounds || {}).some(v => v > 0) && (
             <div>
               <h3 className="text-xs font-bold text-red-500 uppercase tracking-wider mb-2 border-b border-zinc-800 pb-1">
@@ -447,6 +471,47 @@ const handlePrintPDF = () => {
                         <button
                           onClick={() => handleGenericChange('attributes', t.id, 1, 5, 5, val - bonus)}
                           disabled={val >= 5 || remainingFreebie < 5}
+                          className="w-5 h-5 bg-zinc-900 border text-zinc-300 rounded"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Pestaña: Habilidades */}
+      {activeTab === 'abilities' && (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {Object.keys(ABILITY_CATEGORIES).map((catKey) => (
+            <div key={catKey} className="bg-black/90 p-3.5 rounded-lg border border-zinc-800 space-y-3">
+              <span className="text-xs font-bold text-red-400 uppercase tracking-wider block">
+                {ABILITY_CATEGORIES[catKey].label}
+              </span>
+              <div className="space-y-2">
+                {ABILITY_CATEGORIES[catKey].traits.map((t) => {
+                  const val = character.abilities[t.id] || 0;
+                  const bonus = (freebieSpent.abilities || {})[t.id] || 0;
+                  return (
+                    <div key={t.id} className="flex justify-between items-center text-xs p-2 bg-zinc-950 rounded border border-zinc-900">
+                      <span className="text-zinc-200">{t.name}</span>
+                      <div className="flex items-center space-x-2">
+                        <button
+                          onClick={() => handleGenericChange('abilities', t.id, -1, 2, 5, val - bonus)}
+                          disabled={bonus <= 0}
+                          className="w-5 h-5 bg-zinc-900 border text-zinc-300 rounded"
+                        >
+                          -
+                        </button>
+                        <span className="font-mono text-red-400 font-bold">{val}</span>
+                        <button
+                          onClick={() => handleGenericChange('abilities', t.id, 1, 2, 5, val - bonus)}
+                          disabled={val >= 5 || remainingFreebie < 2}
                           className="w-5 h-5 bg-zinc-900 border text-zinc-300 rounded"
                         >
                           +
