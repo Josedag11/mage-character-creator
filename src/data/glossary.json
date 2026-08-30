@@ -1,0 +1,100 @@
+{
+  "arete": {
+    "title": "Areté",
+    "subtitle": "La chispa de la Iluminación",
+    "summary": "Mide la comprensión mística de un mago Despertado y su capacidad pura para alterar la Realidad.",
+    "mechanics": "Sirve como tu reserva de dados principal al lanzar magia. Determina el nivel máximo permitido para las 9 Esferas (el límite de nivel en cualquier Esfera = tu valor de Areté).",
+    "lore": "Derivado del antiguo concepto griego de 'excelencia' o 'virtud'. En Mago: La Ascensión, refleja qué tan profundo tu mente ha Despertado más allá de la ilusión del Consenso."
+  },
+  "paradox": {
+    "title": "Paradoja (Paradox)",
+    "subtitle": "La respuesta inmune de la Realidad",
+    "summary": "El contragolpe cósmico que golpea a los magos cuando rompen las leyes físicas, lanzan magia vulgar o fallan hechizos ante los Durmientes.",
+    "mechanics": "Se acumula en tu reserva de Paradoja. Al descargarse, provoca Defectos de Paradoja, daño físico por retroceso o el encierro en un Reino de Paradoja.",
+    "lore": "La Realidad del Consenso está anclada por la creencia colectiva de las masas sin Despertar. Cuando un mago fuerza la física, la Realidad se defiende para reparar la grieta."
+  },
+  "consensus": {
+    "title": "El Consenso (Consensus)",
+    "subtitle": "La creencia colectiva de los Durmientes",
+    "summary": "El acuerdo compartido por la humanidad sobre lo que es científica o físicamente posible en el mundo.",
+    "mechanics": "Determina si un Efecto mágico es Coincidente (encaja con las expectativas cotidianas) o Vulgar (rompe la física del entorno).",
+    "lore": "Como las masas durmientes creen firmemente que la gravedad funciona y la magia no, su Fuerza de Voluntad colectiva impone leyes físicas estrictas a escala global."
+  },
+  "quintessence": {
+    "title": "Quintaesencia (Quintessence)",
+    "subtitle": "Energía pura de Primado",
+    "summary": "El combustible fundamental de la creación en el universo; energía cósmica sin forma.",
+    "mechanics": "Se gasta para reducir la dificultad en tiradas de Magia, absorber Paradoja o canalizar energía en Patrones permanentes (Maravillas y Artefactos).",
+    "lore": "Conocida como Éter, Chi o Utilidad Primaria. Fluye a través de los Nodos y forma los cimientos de toda la existencia física y espiritual."
+  },
+  "willpower": {
+    "title": "Fuerza de Voluntad (Willpower)",
+    "subtitle": "Entereza mental y empuje interior",
+    "summary": "Mide el enfoque, la determinación y la resistencia mental de tu personaje ante la dominación o el terror.",
+    "mechanics": "Se gasta para obtener un éxito automático en tiradas decisivas, resistir control mental o mantenerse firme ante el estrés sobrenatural.",
+    "lore": "En un universo gobernado por la creencia, la fuerza de la intención es el escudo más poderoso de un mago contra la desesperanza y la Estasis."
+  },
+  "avatar": {
+    "title": "Avatar",
+    "subtitle": "El fragmento de alma Despertada",
+    "summary": "El yo interior místico o divino que despierta a un humano para convertirse en Mago.",
+    "mechanics": "Determina tu reserva máxima inicial de Quintaesencia y otorga visiones o guía mística según la Esencia de tu Avatar (Dinámica, Patrón, Primordial o Búsqueda).",
+    "lore": "Una chispa inmortal unida al alma que reencarna a lo largo de las vidas, empujando al mago hacia sus Búsquedas y su Iluminación."
+  },
+  "spheres": {
+    "title": "Las 9 Esferas",
+    "subtitle": "Las facetas de la Realidad",
+    "summary": "Los nueve bloques fundamentales de la existencia: Correspondencia, Entropía, Fuerzas, Vida, Materia, Mente, Primado, Espíritu y Tiempo.",
+    "mechanics": "Cada punto representa un dominio más profundo. Los Efectos mágicos combinan una o más Esferas para alterar el mundo.",
+    "lore": "Codificadas en la Gran Convocatoria de 1466, las Esferas categorizan todos los fenómenos naturales y sobrenaturales en disciplinas comprensibles."
+  },
+  "traditions": {
+    "title": "Las Nueve Tradiciones",
+    "subtitle": "Alianza mística por el libre albedrío",
+    "summary": "Una coalición global de nueve facciones místicas que luchan por preservar diversos paradigmas y la individualidad humana.",
+    "mechanics": "Otorga acceso a prácticas tradicionales, instrumentos de Enfoque personalizados y una Esfera de Afinidad inicial.",
+    "lore": "Se unieron en el siglo XV para librar la Guerra de la Ascensión contra la imposición rígida de la Tecnocracia."
+  },
+  "technocracy": {
+    "title": "La Unión Tecnocrática",
+    "subtitle": "Arquitectos de un mundo ordenado",
+    "summary": "Una coalición global de alta tecnología dedicada a proteger a la humanidad mediante la ciencia, el orden y el progreso predecible.",
+    "mechanics": "Utiliza 'Ciencia Inspirada' e 'Hipertecnología' en lugar de hechicería tradicional. Está sujeta a Desviaciones en lugar del contragolpe clásico.",
+    "lore": "Creen que la magia sin control trae caos y monstruos. Imponen un Consenso seguro y estandarizado para toda la humanidad."
+  },
+  "syndicate": {
+    "title": "El Sindicato (The Syndicate)",
+    "subtitle": "Convención financiera de la Tecnocracia",
+    "summary": "Maestros del capital, la influencia corporativa, los medios de comunicación y la dinámica de mercados.",
+    "mechanics": "Especialistas en la Esfera de Utilidad Primaria (Primado) aplicada a través del flujo financiero, el apalancamiento económico y la ingeniería social.",
+    "lore": "Formados a partir de los gremios comerciales del Renacimiento, manejan la economía global tratando el dinero como la fuerza definitiva para moldear la realidad."
+  },
+  "disparates": {
+    "title": "Dispares y Huérfanos",
+    "subtitle": "Facciones Despertadas independientes",
+    "summary": "Magos y tradiciones que se niegan a alinearse tanto con las Nueve Tradiciones como con la Unión Tecnocrática.",
+    "mechanics": "Ofrecen Paradigmas y Prácticas únicas y localizadas, fuera de las estructuras diplomáticas estándar de la Guerra de la Ascensión.",
+    "lore": "Incluye antiguas tradiciones indígenas, Huérfanos Despertados en solitario y gremios mágicos independientes de todo el mundo."
+  },
+  "attributes": {
+    "title": "Atributos (Attributes)",
+    "subtitle": "Rasgos biológicos y mentales centrales",
+    "summary": "Divididos en Físicos (Fuerza, Destreza, Resistencia), Sociales (Carisma, Manipulación, Apariencia) y Mentales (Percepción, Inteligencia, Astucia).",
+    "mechanics": "Proporcionan la reserva de dados base para acciones físicas, interacción social y razonamiento mental. Todos los Atributos comienzan con 1 punto base.",
+    "lore": "Representan tu potencial humano natural antes del entrenamiento o la mejora mística."
+  },
+  "abilities": {
+    "title": "Habilidades (Abilities)",
+    "subtitle": "Talentos, Técnicas y Conocimientos",
+    "summary": "Rasgos aprendidos que representan experiencia práctica, entrenamiento especializado y estudio académico.",
+    "mechanics": "Se suman a los Atributos para formar tu reserva de dados completa (Atributo + Habilidad). No pueden superar los 3 puntos durante la creación inicial.",
+    "lore": "Las herramientas y conocimientos mundanos en los que confía un mago cuando la magia es demasiado riesgosa o vulgar."
+  },
+  "focus": {
+    "title": "Enfoque Mágico (Focus)",
+    "subtitle": "Paradigma, Práctica e Instrumentos",
+    "summary": "El marco conceptual de creencias a través del cual tu mago comprende y ejecuta su magia.",
+    "mechanics": "Requiere seleccionar un Paradigma (cómo funciona la realidad), una Práctica (cómo actúas) y al menos 7 Instrumentos (herramientas para lanzar magia).",
+    "lore": "Sin un Enfoque, una mente sin Iluminación no puede canalizar el Areté. A medida que el Areté crece, el mago aprende a trascender sus instrumentos físicos."
+  }
+}
